@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>It's Sharkle</title>
+  </head>
+  <body>
+    <div id="sharkle"></div>
+
+    <script>
+      var color = "Black";
+      var direction = "Normal";
+      var invertColors = function () {
+          if(color === "Black") {
+              color = "White";
+          }
+          else {
+              color = "Black";
+          }
+          sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+      }
+      var flipDirection = function () {
+          if(direction === "Normal") {
+              direction = "Invert";
+          }
+          else {
+              direction = "Normal";
+          }
+          sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+      }
+      var sharkle = document.getElementById("sharkle");
+      var audio = [new Audio('./sounds/Sharkle1.mp3'),
+                      new Audio('./sounds/Sharkle2.mp3'),
+                      new Audio('./sounds/Sharkle3.mp3'),
+                      new Audio('./sounds/Sharkle4.mp3'),
+                      new Audio('./sounds/Sharkle5.mp3')];
+
+      audio[0].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+      audio[0].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+      audio[1].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+      audio[2].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+      audio[3].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+      audio[4].addEventListener('ended', function(){
+          setTimeout(function() {
+                  sharkle.style.background = "url('./images/Sharkle-Idle-" + direction + "-" + color + ".gif')";
+          }, 150);
+      });
+
+      sharkle.onclick = function() {
+          sharkle.style.background = "url('./images/Sharkle-Hey-" + direction + "-" + color + ".gif')";
+          audio[Math.floor(Math.random() * 5)].play();
+      };
+    </script>
+  </body>
+</html>

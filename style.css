@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-app-region: drag;
+}
+
+#sharkle {
+    background-image: url('./images/Sharkle-Idle-Normal-Black.gif');
+    height: 290px;
+    width: 310px;
+}

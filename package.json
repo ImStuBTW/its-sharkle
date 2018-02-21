@@ -1,0 +1,28 @@
+{
+  "name": "its-sharkle",
+  "version": "1.0.0",
+  "description": "A silly Nights in the Woods inspired Sharkle applet for your desktop!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImStuartJones/its-sharkle.git"
+  },
+  "keywords": [
+    "Sharkle",
+    "Night",
+    "in",
+    "the",
+    "Woods",
+    "Electron",
+    "Hey"
+  ],
+  "author": "Stuart Jones",
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/ImStuartJones/its-sharkle#readme",
+  "devDependencies": {
+    "electron": "~1.8.2"
+  }
+}
