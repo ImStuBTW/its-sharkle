@@ -14,6 +14,10 @@ It's Sharkle is a small Mac applet that puts the Sharkle desktop toy from the in
 
 If you go to the boat icon on your taskbar, you can quit the app, invert Shakle's colors, or make him face the other direction.
 
+## Where can I download it?
+
+Right here! The /dist folder has a zipped version of the [Mac executable](https://github.com/ImStuartJones/its-sharkle/blob/master/dist/its-sharkle.app.zip). Unzip it and drop it in your applications folder, and you should be good to go. Depending on your Mac's security settings, you may need to right click the app and select "Open" the first time you run it.
+
 ## Why is this app so large?
 
 I'm a web developer, not a desktop app developer. Shakle's written in a large framework called Electron, which needs to be included in your app distribution.
