@@ -2,6 +2,8 @@
 
 ## What does this app do?
 
+![Hey!](https://github.com/ImStuartJones/its-sharkle/raw/master/images/screenshot.png)
+
 It's Sharkle!
 
 ## No really, what does it do?
