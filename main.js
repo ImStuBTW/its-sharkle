@@ -46,7 +46,7 @@ app.on('ready', () => {
     app.dock.hide();
   }
 
-  tray = new Tray(path.join(__dirname, './icons/baricon.png'))
+  tray = new Tray(path.join(__dirname, './icons/iconTemplate.png'))
   const contextMenu = Menu.buildFromTemplate([
     {label: 'Invert Colors', type: 'checkbox', checked: false, click(item) {
         console.log("Hey you clicked invert! " + item.checked);
